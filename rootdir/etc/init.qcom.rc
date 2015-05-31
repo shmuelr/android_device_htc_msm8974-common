@@ -400,11 +400,6 @@ service map1_del /system/bin/sdptool del 0x1ff17
     disabled
     oneshot
 
-service mpdecision /system/bin/mpdecision --avg_comp
-    class late_start
-    user root
-    group system
-
 service netmgrd /system/bin/netmgrd
     class core
 
@@ -444,12 +439,6 @@ service qseecomd /system/bin/qseecomd
 service rmt_storage /system/bin/rmt_storage modem_st1 modem_st2 fsc recovery radio_config cdma_record
     class core
     user root
-
-# OSS thermal management
-service thermanager /system/bin/thermanager /system/etc/thermanager.xml
-    class late_start
-    user root
-    group root
 
 service time_daemon /system/bin/time_daemon
    class late_start
