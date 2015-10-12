@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
+		init.team-m8.rc \
     ueventd.qcom.rc
 
 # Qcom init scripts for /etc
